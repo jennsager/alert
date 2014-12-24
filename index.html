@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://ricostacruz.com/jquery.transit/jquery.transit.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	</head>
+	<body>
+		<section>
+			<div class="wrapper">
+				<div class="question">
+					 <div class="small big-width float-left"> I am a student who goes to -------------------
+					 </div>
+					 <div class="small-width float-left lt-grey">
+					 	<div class="circle" id="circle">
+					 		<i class="fa fa-check"></i>
+					 	</div>
+					 </div>
+				</div>
+				<br>
+				<div class="question top-space">
+					 <div class="small big-width float-left"> and will graduate in 2015
+					 </div>
+					 <div class="small-width float-left">
+					 	<div class="circle validate">
+					 		<i class="fa fa-check green"></i>
+					 	</div>
+					 </div>
+				</div>
+				<br>
+				<br>
+				<button type="button" class="button"> Onwards! </button>
+			</div>
+		</section>
+
+
+	</body>
+	<script>
+		$('button').click(function() {
+			$('#circle').toggleClass('alert');
+
+			setTimeout(function () { 
+			    $('#circle').removeClass('alert');
+			}, 700);
+		});
+
+		
+	</script>
+</html>
