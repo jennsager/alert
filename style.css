@@ -64,6 +64,11 @@ section{
 	line-height: 200%;
 }
 
+.subtitle-space{
+	margin-top: 10px;
+	margin-bottom:30px;
+}
+
 .circle{
 	background-color: #e5e5e5;
 	width:32px;
@@ -79,11 +84,15 @@ section{
 	color: #37AE7C;
 }
 
+.teal{
+	color: #00beb6;
+}
+
 .lt-grey{
 	color: #848484;
 }
 
-.button{
+.button-one, .button-two{
 	background-color:#F6892F;
 	border-radius: 4px;
 }
@@ -122,6 +131,12 @@ section{
     animation: red 0.8s;
 }
 
+.alert-shake{
+	-webkit-animation: shake 0.3s;
+    animation: shake 0.3s;
+}
+
+
 
 @-webkit-keyframes red{
 
@@ -129,11 +144,22 @@ section{
     	 -webkit-transform: scale(1.1);
    		background-color: #F4B6B6;
    		color: #A83333;
+   	}
 
     100%{
-    	background-color: grey;
+    	background-color: #e5e5e5;
     }
+}
 
-    .red{
-    	color: #E56767;
+    @-webkit-keyframes shake{
+
+    20%{
+      -webkit-transform: translateX(5px)}
+
+     50%{
+      -webkit-transform: translateX(-5px)}
+
+    80%{
+    	-webkit-transform: translateX(0px)
     }
+}

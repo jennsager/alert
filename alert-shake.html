@@ -8,27 +8,28 @@
 		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	</head>
 	<body>
+		
 		<section>
 			<div class="wrapper">
 				<div class="x-large">
-					Alert 1 - Color change
+					Alert 2 - Shake
 				</div>
 				<div class="subtitle-space lt-grey">
-					Alert changes to red to get your attention.
+					An alert with a slight red bg to get your attention.
 				</div>
 				<div class="question">
-					 <div class="small big-width float-left">
-					 	I am a student who goes to <span class="teal">-------------------</span>
-					 </div>
-					 <div class="small-width float-left lt-grey">
-					 	<div class="circle alert-one" id="circle">
-					 		<i class="fa fa-check"></i>
-					 	</div>
-					 </div>
+					<div class="small big-width float-left">
+						I am a student who goes to -------------------
+					</div>
+					<div class="small-width float-left lt-grey">
+						<div class="circle alert-two" id="circle">
+							<i class="fa fa-check"></i>
+						</div>
+					</div>
 				</div>
 				<br>
 				<div class="question top-space">
-					 <div class="small big-width float-left"> and will graduate in <span class="teal">2015</span>
+					 <div class="small big-width float-left"> and will graduate in 2015
 					 </div>
 					 <div class="small-width float-left">
 					 	<div class="circle validate">
@@ -38,20 +39,19 @@
 				</div>
 				<br>
 				<br>
-				<button type="button" class="button-one"> Onwards! </button>
+				<button type="button" class="button-two"> Onwards! </button>
 			</div>
 		</section>
-
 	</body>
 	<script>
-		$('button.button-one').click(function() {
-			$('#circle.circle.alert-one').toggleClass('alert');
+
+
+		$('button.button-two').click(function() {
+			$('#circle.circle.alert-two').toggleClass('alert-shake');
 
 			setTimeout(function () { 
-			    $('#circle.circle.alert-one').removeClass('alert');
+			    $('#circle.circle.alert-two').removeClass('alert-shake');
 			}, 700);
 		});
-
-		
 	</script>
 </html>
